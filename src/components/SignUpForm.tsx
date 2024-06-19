@@ -2,14 +2,15 @@
 
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import TextField from "../components/common/TextField";
-import RadioInput from "../components/common/RadioInput";
-import CheckboxInput from "../components/common/CheckboxInput";
-import BooleanCheckbox from "../components/common/BooleanCheckbox";
-import Select from "../components/common/Select";
+import TextField from "../common/TextField";
+import RadioInput from "../common/RadioInput";
+import CheckboxInput from "../common/CheckboxInput";
+import BooleanCheckbox from "../common/BooleanCheckbox";
+import Select from "../common/Select";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { FormValues } from "../types/common";
 
 const radioOptions = [
   { label: "زن", value: "1" },
@@ -40,7 +41,7 @@ const initialValues = {
   terms: false,
 };
 
-const onSubmit = (values) => {
+const onSubmit = (values: FormValues) => {
   axios
     .patch("http://localhost:5000/users/1", values)
     .then((res) => toast.success("ثبت نام با موفقیت انجام شد"))
@@ -72,7 +73,7 @@ const validationSchema = Yup.object({
 
   passwordConfirm: Yup.string()
     .required("تکرار رمز الزامیست")
-    .oneOf([Yup.ref("password"), null], "پسوردها یکی نیستند"),
+    .oneOf([Yup.ref("password")], "پسوردها یکی نیستند"),
 
   gender: Yup.string().required("جنسیت الزامیست"),
 

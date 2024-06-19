@@ -2,17 +2,17 @@
   "users": [
     {
       "id": "1",
-      "name": "معصوم",
-      "email": "mhb1996feb@gmail.com",
-      "phoneNumber": "55555555554",
-      "password": "2680227344Mhb*",
-      "passwordConfirm": "2680227344Mhb*",
-      "gender": "1",
+      "terms": true,
+      "nationality": "GER",
       "interest": [
         "React.js"
       ],
-      "nationality": "IR",
-      "terms": true
+      "gender": "0",
+      "passwordConfirm": "2680227344Mhb*",
+      "password": "2680227344Mhb*",
+      "phoneNumber": "55555555555",
+      "email": "mhb1996feb@gmail.com",
+      "name": "Masi"
     }
   ]
 }

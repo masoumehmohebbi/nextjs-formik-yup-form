@@ -1,10 +1,20 @@
+import { FormValues } from "@/src/types/common";
+import { FormikProps } from "formik";
 import React from "react";
 
-const Select = ({ formik, name, selectOptions }) => {
+type SelectProps = {
+  selectOptions: {
+    label: string;
+    value: string;
+  }[];
+  name: keyof FormValues;
+  formik: FormikProps<FormValues>;
+};
+
+const Select = ({ formik, name, selectOptions }: SelectProps) => {
   return (
     <div>
       <select
-        name={name}
         {...formik.getFieldProps(name)}
         className="w-full transition bg-slate-100 duration-300 rounded-lg p-3 border focus:outline-none focus:bg-white focus:border-blue-300 hover:border-blue-300 focus:shadow-lg focus:shadow-blue-100"
       >

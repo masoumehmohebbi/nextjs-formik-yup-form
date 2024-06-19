@@ -1,9 +1,20 @@
+import { FormValues } from "@/src/types/common";
+import { FormikProps } from "formik";
 import React from "react";
 
-const CheckboxInput = ({ formik, name, checkboxOptions }) => {
+type RadioInputProps = {
+  radioOptions: {
+    label: string;
+    value: string;
+  }[];
+  name: keyof FormValues;
+  formik: FormikProps<FormValues>;
+};
+
+const RadioInput = ({ formik, radioOptions, name }: RadioInputProps) => {
   return (
     <div className="flex flex-row gap-x-4">
-      {checkboxOptions.map((item) => (
+      {radioOptions.map((item) => (
         <div key={item.value}>
           <label className="ml-1" htmlFor={item.value}>
             {item.label}
@@ -13,9 +24,9 @@ const CheckboxInput = ({ formik, name, checkboxOptions }) => {
             className="cursor-pointer w-4 h-4"
             id={item.value}
             value={item.value}
-            type="checkbox"
+            type="radio"
             onChange={formik.handleChange}
-            checked={formik.values[name].includes(item.value)}
+            checked={formik.values.gender === item.value}
           />
         </div>
       ))}
@@ -26,4 +37,4 @@ const CheckboxInput = ({ formik, name, checkboxOptions }) => {
   );
 };
 
-export default CheckboxInput;
+export default RadioInput;
