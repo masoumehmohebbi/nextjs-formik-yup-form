@@ -1,4 +1,4 @@
-import { FormValues } from "@/src/types/common";
+import { FormValues } from "@/types/common";
 import { FormikProps } from "formik";
 import React from "react";
 

@@ -1,4 +1,4 @@
-import { FormValues } from "@/src/types/common";
+import { FormValues } from "@/types/common";
 import { FormikProps } from "formik";
 import React from "react";
 
@@ -20,7 +20,7 @@ const BooleanCheckbox = ({ formik, name }: BooleanCheckboxProps) => {
         value="true"
         onChange={formik.handleChange}
         checked={formik.values[name] as boolean}
-        className="w-4 h-4"
+        className="w-4 h-4 cursor-pointer"
       />
 
       {formik.errors[name] && formik.touched[name] && (

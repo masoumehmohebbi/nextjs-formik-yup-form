@@ -2,15 +2,15 @@
 
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import TextField from "../common/TextField";
-import RadioInput from "../common/RadioInput";
-import CheckboxInput from "../common/CheckboxInput";
-import BooleanCheckbox from "../common/BooleanCheckbox";
-import Select from "../common/Select";
+import TextField from "@/common/TextField";
+import RadioInput from "@/common/RadioInput";
+import CheckboxInput from "@/common/CheckboxInput";
+import BooleanCheckbox from "@/common/BooleanCheckbox";
+import Select from "@/common/Select";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { FormValues } from "../types/common";
+import { FormValues } from "@/types/common";
 
 const radioOptions = [
   { label: "زن", value: "1" },
@@ -108,10 +108,12 @@ const SignUpForm = () => {
   }, []);
 
   return (
-    <div className="bg-slate-100 text-gray-800 ">
+    <div className="bg-slate-100 text-gray-800 font-sans">
       <main className="container mx-auto sm:p-3 sm:max-w-screen-sm">
         <div className=" bg-white min-h-screen sm:m-3 rounded-md py-3 px-4">
-          <h1 className="font-bold text-3xl text-center py-3">ثبت نام</h1>
+          <h1 className="font-bold text-2xl sm:text-3xl text-center py-3">
+            ثبت نام
+          </h1>
           <form
             onSubmit={formik.handleSubmit}
             className="flex flex-col gap-y-6"

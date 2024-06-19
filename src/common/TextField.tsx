@@ -1,6 +1,6 @@
 import React from "react";
 import { FormikProps } from "formik";
-import { FormValues } from "@/src/types/common";
+import { FormValues } from "@/types/common";
 
 type TextFieldProps = {
   label: string;

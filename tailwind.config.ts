@@ -7,7 +7,11 @@ const config: Config = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["vazir"],
+      },
+    },
   },
   plugins: [],
 };

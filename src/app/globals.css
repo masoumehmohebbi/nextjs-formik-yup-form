@@ -1,23 +1,20 @@
+@import url("./front.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+html,
+body {
   padding: 0;
   margin: 0;
+  font-family: Vazir;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
   box-sizing: border-box;
 }
-
-/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root, */
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  left: inherit !important;
-  right: 1.75rem !important;
-  transform-origin: right !important;
-  text-align: right !important;
-}
-
-/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
-  left: 0 !important;
-  top: 0 !important;
-  transform-origin: top right !important;
-} */
