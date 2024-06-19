@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "معصوم",
+      "email": "mhb1996feb@gmail.com",
+      "phoneNumber": "55555555554",
+      "password": "2680227344Mhb*",
+      "passwordConfirm": "2680227344Mhb*",
+      "gender": "1",
+      "interest": [
+        "React.js"
+      ],
+      "nationality": "IR",
+      "terms": true
+    }
+  ]
+}
