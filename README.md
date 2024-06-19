@@ -5,7 +5,7 @@
  
 
 
-<h2>Built with <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Alien.png" alt="Alien" width="35" height="35" /></h2>
+<h2>Built with <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Alien" width="35" height="35" /></h2>
    <ul>
       <li>Language ┈➤ Typescript</li>
       <li>FrameWork ┈➤ Next.js 14</i>
